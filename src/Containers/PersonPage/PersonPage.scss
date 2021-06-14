@@ -1,0 +1,42 @@
+.order {
+    border: 3px var(--color-primary) groove;
+
+    .order__content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    @media screen and (max-width: 1208px) {
+        .order__content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media screen and (max-width: 880px) {
+        .order__content {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    .orderInfo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 3px dashed var(--color-primary);
+        justify-content: space-between;
+        div {
+            padding: 1rem;
+        }
+    }
+    .guitar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .guitarImg img {
+            width: 150px;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.Card{
+    background: white;
+    border: 1px solid rgb(167, 167, 167);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s;
+}
+.Card:hover{
+    box-shadow: 1.5px 1.5px 5px 0 #000, 1px 1px 15px 0 #333;
+    transform: scale(1.02, 1.02);
+}
+.GoodImg{
+    width: 100%;
+}
+.GoodImg img{
+    max-width: 100%;
+    max-height: 200px;
+}
+
+.CardContent {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.Name{
+    font-size: 20px;
+}
+.Cost{
+    font-size: 18px;
+    font-weight: bold;
+    border-top: solid 1px rgb(167, 167, 167);
+}
+.BuyButton{
+    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 0 -1px rgba(0,0,0,.5);
+  user-select: none;
+  padding: .7em 1.5em;
+  border: 1px solid rgb(109, 109, 109);
+  border-radius: 5px;
+  outline: none;
+  background: rgb(95, 95, 95) linear-gradient(rgb(83, 81, 80), rgb(124, 124, 124) 80%);
+  box-shadow:
+   0 6px rgb(126, 126, 126),
+   0 3px 15px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  transition: .2s;
+
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.BuyButton:hover{
+    background: rgb(255, 119, 101) linear-gradient(rgb(114, 0, 0), rgb(236, 0, 0) 80%);
+}
+
+.BuyButton:active{
+    background: rgb(196, 0, 0) linear-gradient(rgb(230, 0, 0) 20%, rgb(230, 4, 4));
+  box-shadow:
+   0 2px rgb(102, 0, 0),
+   0 1px 6px rgba(0,0,0,.4),
+   inset 0 1px rgba(255,255,255,.3),
+   inset 0 0 3px rgba(255,255,255,.5);
+  -webkit-transform: translate(0, 4px);
+  transform: translate(0, 4px);
+}

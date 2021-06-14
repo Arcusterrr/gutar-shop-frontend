@@ -1,0 +1,202 @@
+/* resets */
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* main */
+header {
+    height: 360px;
+    z-index: 10;
+}
+.exit li{
+    z-index: 1000000;
+    color: white;
+    padding-left: 0;
+    cursor: pointer;
+    text-align: center;
+}
+.header-banner-Morka {
+    background-color: #333;
+    background-image: url("https://www.musicstore.com/INTERSHOP/static/WFS/MusicStore-Site/MusicStoreShop/MusicStore-MusicStoreShop/de_DE/longtext/GIT0048895-000/Gibson-Les-Paul-Custom-Ebony-Gloss.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+    background-attachment: fixed;
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (max-width: 648px) {
+    .header-banner-Morka {
+        background-size: auto 300px;
+    }
+}
+
+header h1 {
+    background-color: #e2211c;
+    color: #fff;
+    padding: 0 1rem;
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    height: 60px;
+    background: #e2211c;
+    z-index: 10;
+    color: #131313;
+}
+
+nav div {
+    color: white;
+    font-size: 2rem;
+    line-height: 60px;
+    position: absolute;
+    top: 0;
+    left: 2%;
+    visibility: hidden;
+}
+.visible-title {
+    visibility: visible;
+}
+
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: right;
+    max-width: 100%;
+}
+nav ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #131313;
+}
+.cart:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+    transition: color 0.3s ease-in-out;
+}
+.logPerson {
+    padding-left: 100px;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.person:hover {
+    cursor: pointer;
+    color: rgb(156, 156, 156);
+    transition: color 0.3s ease-in-out;
+}
+.log {
+    padding-left: 100px;
+}
+
+/* demo content */
+body {
+    color: #292f36;
+    font-family: helvetica;
+    line-height: 1.6;
+}
+.content {
+    margin: 0 auto;
+    padding: 4rem 0;
+    width: 960px;
+    max-width: 100%;
+}
+article {
+    float: left;
+    width: 720px;
+}
+article p:first-of-type {
+    margin-top: 0;
+}
+aside {
+    float: right;
+    width: 120px;
+}
+p img {
+    max-width: 100%;
+}
+
+ul.mobile-menu__list {
+    margin-top: 3rem;
+}
+
+.mobile-toggler {
+    color: whitesmoke;
+}
+
+.ork-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: auto;
+    padding: 0.5rem;
+}
+
+.ork-menu-beck {
+    header {
+        background-color: var(--color-primary);
+    }
+}
+
+.GorkaHeaderNav {
+    display: flex;
+}
+
+@media screen and (min-width: 864px) {
+    button.ork-tickalo {
+        display: none;
+    }
+}
+@media screen and (max-width: 864px) {
+    .ork-menu__dakka {
+        display: none;
+    }
+}
+
+a.mobile-link {
+    z-index: 1000000;
+    color: white;
+    display: block;
+    position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+    .content {
+        padding: 2rem 0;
+    }
+    article {
+        float: none;
+        margin: 0 auto;
+        width: 96%;
+    }
+    article:last-of-type {
+        margin-bottom: 3rem;
+    }
+    aside {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+.logPersonTachilina {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+}

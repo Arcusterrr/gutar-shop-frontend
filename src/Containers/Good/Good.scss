@@ -1,0 +1,97 @@
+@use "sass:math";
+
+.Content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 50px;
+    .Second,
+    .First {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+    }
+
+    .First {
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        overflow: hidden;
+
+        .Scroller {
+            width: auto;
+            flex-grow: 1;
+        }
+    }
+}
+
+.Scroller{
+    margin-bottom: 50px;
+    padding: 15px;
+    border-left: 6px solid var(--color-primary, #e2211c);
+    border-right: 6px solid var(--color-primary, #e2211c);
+    border-radius: 8px;
+    margin: 0 15px;
+}
+
+.ScrollItem{
+    pointer-events: none;
+    position: relative;
+
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px 0 #000, 1px 1px 15px 0 #333;
+}
+
+.good__Img {
+    min-width: 150px;
+    max-height: 450px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.good__Name {
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    font-size: 48px;
+    border-bottom: 1px solid black;
+}
+.rating {
+    border-top: 1px solid black;
+    justify-content: center;
+}
+.good__Description {
+    text-align: center;
+    padding: 20px;
+}
+.good__Cost {
+    text-align: center;
+    font-size: 24px;
+    color: var(--color-primary);
+    padding-bottom: 20px;
+}
+.good__Buy{
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+.BuyButton{
+    cursor: pointer;
+}
+
+@media screen and (max-width: 684px) {
+    .rating{
+        .rating__item{
+        font-size: 36px;
+        }
+    }
+    .Content{
+        display: block;
+    }
+    .good__Name{
+        font-size: 36px;
+    }
+}

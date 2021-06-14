@@ -1,0 +1,56 @@
+.Footer{
+    padding: 20px;
+    padding-top: 50px;
+    background: white;
+}
+.Container{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+    padding-bottom: 15px;
+}
+.FooterContent{
+    display: flex;
+	flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    height: 48%;
+}
+.First + .Second{
+    margin-left: 4%;
+}
+.Heading{
+    font-size: 18px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.WeAre{
+    text-align: center;
+    font-size: 21px;
+    padding-bottom: 15px;
+}
+
+.License{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+    border-top: solid black 1px;
+    padding-top: 5px;
+    justify-content: space-between;
+    .Second{
+        text-align: right;
+    }
+    .First, .Second{
+        display: flex;
+        flex-direction: column;
+        flex-basis: 100%;
+        flex: 1;
+        height: 48%;
+    }
+    .First img{
+        height: 300px;
+        width: 300px;
+    }
+}

@@ -1,0 +1,33 @@
+.MainContent{
+    display: flex;
+
+    @media screen and (max-width: 1200px) {
+        flex-wrap: wrap;
+    }
+}
+
+.Guitar3D {
+    width: 40%;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.Guitar3D canvas {
+    width: 100%;
+
+    @media screen and (max-width: 1200px) {
+        width: 100%;
+    }
+}
+
+.bigWord{
+    font-size: 42px;
+    padding-bottom: 30px;
+}
+
+.About{
+    font-size: 24px;
+    padding-right: 80px;
+}
